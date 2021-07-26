@@ -16,7 +16,7 @@ Merge two sorted linked lists and return it as a sorted list. The list should be
  */
 
  // A recursive algorithm that will return the head of the smaller linked list in each iteration
- // Keypoints: Base cases, a head node inorder not to lose track, passing the next node for the next iteration
+ // Key points: Base cases, a head node inorder not to lose track, passing the next node for the next iteration
 
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
