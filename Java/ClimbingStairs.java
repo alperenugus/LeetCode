@@ -22,6 +22,7 @@ class Solution {
 // Solution 2
 // O(n)
 // Obviously solution 1 ends up finding the nth fibonacci number so we can abstract it and find the result in O(n) time.
+
 class Solution {
     public int climbStairs(int n) {
         int prev_prev = 1;
