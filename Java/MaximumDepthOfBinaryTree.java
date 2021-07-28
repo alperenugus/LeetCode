@@ -22,6 +22,8 @@ A binary tree's maximum depth is the number of nodes along the longest path from
  * }
  */
 
+// Key point: Choose the subtree that has a bigger depth each time. Bottom-up strategy.
+
 class Solution {
     public int maxDepth(TreeNode root) {
         
