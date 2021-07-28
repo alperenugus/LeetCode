@@ -19,6 +19,7 @@ Merge two sorted linked lists and return it as a sorted list. The list should be
  // Key points: Base cases, a head node inorder not to lose track, passing the next node for the next iteration
 
 class Solution {
+    
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         
         if(l1 == null && l2 == null) return null;

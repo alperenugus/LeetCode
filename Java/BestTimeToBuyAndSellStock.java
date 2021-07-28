@@ -11,6 +11,7 @@ Return the maximum profit you can achieve from this transaction. If you cannot a
 // Key points: Sliding window. In each iteration, check if the profit is bigger than the previous. If found a lower price, update minPrice.
 
 class Solution {
+    
     public int maxProfit(int[] prices) {
         
         int profit = 0;

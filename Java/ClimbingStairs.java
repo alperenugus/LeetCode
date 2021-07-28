@@ -11,6 +11,7 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 // This solution is recursive and the complexity is O(2^n).
 
 class Solution {
+
     public int climbStairs(int n) {
         if(n == 1) return 1;
         if(n == 2) return 2;
@@ -24,6 +25,7 @@ class Solution {
 // Obviously solution 1 ends up finding the nth fibonacci number so we can abstract it and find the result in O(n) time.
 
 class Solution {
+    
     public int climbStairs(int n) {
         int prev_prev = 1;
         int prev = 2;

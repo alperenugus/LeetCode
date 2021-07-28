@@ -12,6 +12,7 @@ You can return the answer in any order.
 // O(n^2)
 
 class Solution {
+    
     public int[] twoSum(int[] nums, int target) {
 
         int[] result = new int[2];
@@ -38,7 +39,6 @@ class Solution {
 // O(nlogn)
 
 class Solution {
-
     public static int[] copyArray(int[] from) {
 
         int[] to = new int[from.length];
@@ -99,7 +99,6 @@ class Solution {
 // O(n)
 
 class Solution {
-
     public int[] twoSum(int[] nums, int target) {
 
         int[] result = new int[2];

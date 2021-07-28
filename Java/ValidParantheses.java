@@ -10,6 +10,7 @@ Open brackets must be closed in the correct order.
 */
 
 class Solution {
+    
     public boolean isValid(String s) {
 
         if (s.length() % 2 == 1)

@@ -9,6 +9,7 @@ You must implement a solution with a linear runtime complexity and use only cons
 // O(n)
 
 class Solution {
+    
     public int singleNumber(int[] nums) {
         
         Set<Integer> set = new HashSet<>();
