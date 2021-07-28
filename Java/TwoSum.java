@@ -31,7 +31,6 @@ class Solution {
         }
 
         return result;
-
     }
 }
 
@@ -49,7 +48,6 @@ class Solution {
         }
 
         return to;
-
     }
 
     public int[] twoSum(int[] nums, int target) {
@@ -93,7 +91,6 @@ class Solution {
         }
 
         return result;
-
     }
 
 }
@@ -124,6 +121,5 @@ class Solution {
         }
 
         return result;
-
     }
 }

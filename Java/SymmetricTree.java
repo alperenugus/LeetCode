@@ -35,7 +35,6 @@ class Solution {
         if(root1 == null || root2 == null) return false;
         
         return root1.val == root2.val && check(root1.right, root2.left) && check(root1.left, root2.right);
-        
     }
     
 }
