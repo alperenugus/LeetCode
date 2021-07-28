@@ -47,4 +47,31 @@ class Solution {
 
 // Solution 2
 // Iteration
+// Key point: Go to the left most edge of the tree while adding nodes to the stack.
 
+class Solution {
+    
+    public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> result = new ArrayList<>();
+        Stack<TreeNode> stack = new Stack<>();
+        TreeNode head = root;
+        
+        while(head != null || !stack.isEmpty()){
+
+            while(head != null){
+                
+                stack.push(head);
+                head = head.left;
+                
+            }
+            
+            head = stack.pop();
+            result.add(head.val);
+            head = head.right;
+              
+        }
+        
+        return result;
+        
+    }
+}
