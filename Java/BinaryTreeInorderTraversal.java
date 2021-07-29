@@ -41,7 +41,6 @@ class Solution {
         inorderRecursion(root, result);
         
         return result;
-        
     }
 }
 
@@ -72,6 +71,5 @@ class Solution {
         }
         
         return result;
-        
     }
 }
