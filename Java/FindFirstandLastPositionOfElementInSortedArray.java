@@ -15,7 +15,6 @@ class Solution {
             return new int[]{0, 0};
         }
         
-        
         int[] result = new int[2];
         
         result[0] = findFirstPos(nums, target, 0, nums.length - 1);
