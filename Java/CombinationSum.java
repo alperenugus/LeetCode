@@ -13,31 +13,28 @@ class Solution {
         
         List<List<Integer>> result = new ArrayList<List<Integer>>();
         
-        combination(target, new ArrayList<Integer>(), 0, result, candidates);
-        
+        combination(0, target, result, new ArrayList<Integer>(), 0, candidates);
+    
         return result;
     }
     
-    public void combination(int remainingSum, List<Integer> currentCombination, int currentIndex, List<List<Integer>> result, int[] candidates){
+    public void combination(int total, int target, List<List<Integer>> result, List<Integer> currentCombination, int currentIndex, int[] candidates){
         
-        if(remainingSum == 0){
+        if(total == target){
             result.add(new ArrayList<>(currentCombination));
             return;
         }
         
-        if(remainingSum > 0){
-            for(int i = currentIndex; i < candidates.length; i++){
+        if(total > target || currentIndex >= candidates.length) return;
+        
+        currentCombination.add(candidates[currentIndex]);
             
-                remainingSum -= candidates[i];
+        combination(total + candidates[currentIndex], target, result, currentCombination, currentIndex, candidates);
 
-                currentCombination.add(new Integer(candidates[i]));
+        currentCombination.remove(currentCombination.size()-1);
 
-                combination(remainingSum, currentCombination, i, result, candidates);
-
-                remainingSum += candidates[i];
-                currentCombination.remove(new Integer(candidates[i]));
-            
-            }
-        }
+        combination(total, target, result, currentCombination, currentIndex + 1, candidates);
+        
     }
+    
 }
